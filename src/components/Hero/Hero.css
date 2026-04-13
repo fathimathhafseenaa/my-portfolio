@@ -1,0 +1,346 @@
+.hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding-top: 80px;
+  overflow: hidden;
+  background: var(--bg-black);
+}
+
+/* Animated Background */
+.hero-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.gradient-orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(120px);
+  opacity: 0.15;
+  animation: float 20s ease-in-out infinite;
+}
+
+.orb-1 {
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(220, 38, 38, 0.4) 0%, rgba(220, 38, 38, 0) 70%);
+  top: -15%;
+  right: -10%;
+  animation-delay: 0s;
+}
+
+.orb-2 {
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(239, 68, 68, 0.3) 0%, rgba(239, 68, 68, 0) 70%);
+  bottom: -15%;
+  left: -10%;
+  animation-delay: 7s;
+}
+
+.orb-3 {
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(185, 28, 28, 0.25) 0%, rgba(185, 28, 28, 0) 70%);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation-delay: 14s;
+}
+
+/* Hero Container */
+.hero-container {
+  position: relative;
+  z-index: 1;
+}
+
+.hero-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+/* Hero Text */
+.hero-text {
+  max-width: 650px;
+}
+
+.hero-greeting {
+  font-size: 1.125rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  color: var(--text-secondary);
+  letter-spacing: 0.05em;
+}
+
+.hero-title {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+  color: var(--text-primary);
+  letter-spacing: -0.02em;
+}
+
+.hero-subtitle {
+  font-size: clamp(2.5rem, 6vw, 5rem);
+  font-weight: 900;
+  margin-bottom: 1.5rem;
+  min-height: 100px;
+  line-height: 1.1;
+}
+
+.hero-subtitle h2 {
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin: 0;
+  letter-spacing: -0.03em;
+}
+
+.hero-description {
+  font-size: 1.125rem;
+  line-height: 1.8;
+  margin-bottom: 2.5rem;
+  color: var(--text-secondary);
+  max-width: 550px;
+}
+
+/* CTA Buttons */
+.hero-cta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 2.5rem;
+}
+
+/* Social Links */
+.hero-social {
+  display: flex;
+  gap: 1rem;
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: var(--radius-full);
+  background: var(--bg-card);
+  color: var(--text-secondary);
+  transition: all var(--transition-base);
+  box-shadow: var(--shadow-md);
+  border: 1px solid rgba(220, 38, 38, 0.1);
+}
+
+.social-link:hover {
+  background: var(--gradient-primary);
+  color: var(--bg-black);
+  box-shadow: var(--shadow-glow);
+  border-color: transparent;
+  transform: translateY(-3px);
+}
+
+/* Hero Image */
+.hero-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 450px;
+  aspect-ratio: 1;
+  height: auto;
+}
+
+.image-glow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 110%;
+  height: 110%;
+  background: radial-gradient(circle, rgba(220, 38, 38, 0.3) 0%, rgba(220, 38, 38, 0) 70%);
+  border-radius: 50%;
+  filter: blur(60px);
+  opacity: 0.6;
+  animation: glow 3s ease-in-out infinite;
+  z-index: 1;
+}
+
+.hero-avatar {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 25%;
+  object-fit: cover;
+  border: 3px solid var(--primary-red);
+  background: var(--bg-card);
+  box-shadow: var(--shadow-2xl), var(--shadow-red);
+  z-index: 10;
+}
+
+/* Floating Badges */
+.floating-badge {
+  position: absolute;
+  background: var(--bg-card);
+  padding: 1.25rem 1.75rem;
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-xl);
+  text-align: center;
+  animation: float 4s ease-in-out infinite;
+  z-index: 15;
+  border: 1px solid rgba(220, 38, 38, 0.2);
+  backdrop-filter: blur(10px);
+}
+
+.badge-1 {
+  top: -10%;
+  right: -10%;
+  animation-delay: 0s;
+}
+
+.badge-2 {
+  bottom: -10%;
+  left: -10%;
+  animation-delay: 2s;
+}
+
+.floating-badge span {
+  display: block;
+  font-size: 2.25rem;
+  font-weight: 900;
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 0.25rem;
+}
+
+.floating-badge p {
+  font-size: 0.875rem;
+  font-weight: 600;
+  margin: 0;
+  color: var(--text-secondary);
+}
+
+/* Scroll Indicator */
+.scroll-indicator {
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--text-tertiary);
+  cursor: pointer;
+  transition: all var(--transition-base);
+}
+
+.scroll-indicator:hover {
+  color: var(--primary-red);
+}
+
+.scroll-indicator p {
+  font-size: 0.875rem;
+  font-weight: 500;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .hero-content {
+    gap: 3rem;
+  }
+
+  .image-wrapper {
+    max-width: 380px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding-top: 60px;
+  }
+
+  .hero-content {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    text-align: center;
+  }
+
+  .hero-text {
+    max-width: 100%;
+  }
+
+  .hero-subtitle {
+    min-height: 80px;
+  }
+
+  .hero-description {
+    max-width: 100%;
+  }
+
+  .hero-cta {
+    justify-content: center;
+  }
+
+  .hero-social {
+    justify-content: center;
+  }
+
+  .image-wrapper {
+    max-width: 320px;
+  }
+
+  .floating-badge {
+    display: none;
+  }
+
+  .hero-avatar {
+    border-radius: 15%;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-cta {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .hero-cta .btn {
+    width: 100%;
+  }
+
+  .image-wrapper {
+    max-width: 280px;
+  }
+
+  .orb-1,
+  .orb-2,
+  .orb-3 {
+    width: 350px;
+    height: 350px;
+  }
+
+  .hero-subtitle {
+    font-size: clamp(2rem, 8vw, 3rem);
+  }
+}
