@@ -93,14 +93,14 @@ const Projects = () => {
                     animate={inView ? { opacity: 1 } : {}}
                     transition={{ delay: 0.8 }}
                 >
-                    <a
+                    {/* <a
                         href="https://github.com/shehshaaz?tab=repositories"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="btn btn-primary btn-lg"
                     >
                         View All Projects
-                    </a>
+                    </a> */}
                 </motion.div>
             </div>
         </section>
