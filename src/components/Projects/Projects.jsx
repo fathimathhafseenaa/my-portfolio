@@ -94,9 +94,9 @@ const Projects = () => {
                     transition={{ delay: 0.8 }}
                 >
 <<<<<<< HEAD
-                    <a
+                    {/* <a
                         href="https://github.com/fathimathhafseenaa"
-=======
+======= */}
                     {/* <a
                         href="https://github.com/shehshaaz?tab=repositories"
 >>>>>>> bd1982cd3d4dd57ccfa749b4b9b463ae7637030e
