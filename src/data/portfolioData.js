@@ -28,7 +28,7 @@ export const portfolioData = {
         bio: "I'm a passionate Full Stack Developer with 1+ year of professional experience building scalable web applications using MERN Stack and Laravel. I specialize in developing RESTful APIs, implementing secure authentication systems, and optimizing backend performance for production-level applications." + "<br>" + "I have hands-on experience in MVC architecture, OOP principles, database optimization, and VPS deployment. I enjoy building clean, maintainable solutions and continuously improving performance and user experience.",
         highlights: [
             "1+ year professional experience",
-            "3+ scalable web applications developed",
+            "10+ scalable web applications developed",
             "15+ RESTful APIs implemented",
             "30% performance improvement achieved",
             "VPS deployment & production management experience",
