@@ -6,7 +6,7 @@ export const portfolioData = {
         title: "Full-Stack MERN/LARAVEL Developer",
         tagline: "Building Scalable Web Applications",
         email: "fathimathhafseenaa@gmail.com",
-        phone: "+971 508856081 ",
+        phone: "+91 9746706081 ",
         location: "Dubai, UAE",
         availability: "Available for hire",
         yearsOfExperience: 1,
@@ -217,7 +217,35 @@ export const portfolioData = {
             // featured: true,
             role: "Full Stack Developer"
         },
-       
+        {
+    id: 11,
+    title: "Cloudscape MDTC",
+    category: "Full-Stack (Laravel)",
+    description: "A professional multidisciplinary therapy centre website designed to showcase therapy services, rehabilitation programs, and patient consultation features with a clean and responsive user interface.",
+
+    longDescription:
+        "Developed a modern healthcare and therapy centre platform for Cloudscape MDTC using Laravel and MySQL following MVC architecture. The website highlights multidisciplinary therapy services, rehabilitation programs, patient support solutions, and consultation features through a structured and responsive design. Implemented secure inquiry and appointment forms, reusable Blade components, backend content management, and optimized database performance for seamless user experience. Ensured mobile responsiveness, clean UI/UX, and deployed the application on a live VPS production environment.",
+
+    image: "/projects/cloudscape.png",
+
+    tags: [
+        "Laravel",
+        "PHP",
+        "MySQL",
+        "Blade",
+        "Bootstrap",
+        "MVC",
+        "Responsive Design",
+        "VPS Deployment"
+    ],
+
+    liveUrl: "https://cloudscapemdtc.com/",
+    githubUrl: "",
+
+    // featured: true,
+
+    role: "Full Stack Developer",
+},
 
     ],
 

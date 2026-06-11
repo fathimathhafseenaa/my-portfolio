@@ -114,7 +114,7 @@ const Footer = () => {
                         </p>
                         <p className="footer-contact">
                             <strong>Location:</strong><br />
-                            United Arab Emirates
+                            Kerala, India | Open to Relocate
                         </p>
                         <p className="footer-availability">
                             <span className="status-dot"></span>

@@ -94,7 +94,7 @@ const Projects = () => {
                     transition={{ delay: 0.8 }}
                 >
                     <a
-                        href="https://github.com/shehshaaz?tab=repositories"
+                        href="https://github.com/fathimathhafseenaa"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="btn btn-primary btn-lg"

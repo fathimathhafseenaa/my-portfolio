@@ -51,7 +51,7 @@ const Navbar = ({ darkMode, toggleTheme }) => {
     };
 
     const handleDownloadResume = () => {
-        const resumeUrl = '/FATHIMATH_HAFSEENA_CV.pdf';
+        const resumeUrl = '/videos/FATHIMATH_HAFSEENA_CV.pdf';
         const link = document.createElement('a');
         link.href = resumeUrl;
         link.download = 'FATHIMATH_HAFSEENA_CV.pdf';
