@@ -7,26 +7,20 @@ import './Projects.css';
 
 const Projects = () => {
     const [filter, setFilter] = useState('All');
-
     const [ref, inView] = useInView({
         triggerOnce: true,
         threshold: 0.1,
     });
 
-    const categories = ['All', 'Full-Stack', 'Frontend', 'Backend'];
+  const categories = ['All', 'Full-Stack', 'Frontend', 'Backend'];
 
-    const filteredProjects =
-        filter === 'All'
-            ? portfolioData.projects
-            : portfolioData.projects.filter(
-                  (p) => p.category === filter
-              );
+    const filteredProjects = filter === 'All'
+        ? portfolioData.projects
+        : portfolioData.projects.filter(p => p.category === filter);
 
     return (
         <section id="projects" className="projects section" ref={ref}>
             <div className="projects-container container">
-
-                {/* Section Title */}
                 <motion.div
                     className="section-title"
                     initial={{ opacity: 0, y: 30 }}
@@ -44,13 +38,10 @@ const Projects = () => {
                     transition={{ delay: 0.2 }}
                 >
                     <FiFilter />
-
                     {categories.map((category) => (
                         <button
                             key={category}
-                            className={`filter-btn ${
-                                filter === category ? 'active' : ''
-                            }`}
+                            className={`filter-btn ${filter === category ? 'active' : ''}`}
                             onClick={() => setFilter(category)}
                         >
                             {category}
@@ -69,90 +60,48 @@ const Projects = () => {
                             transition={{ delay: 0.3 + index * 0.1 }}
                             whileHover={{ y: -10 }}
                         >
-                            {project.featured && (
-                                <div className="featured-badge">
-                                    Featured
-                                </div>
-                            )}
-
-                            {/* Project Image */}
+                            {project.featured && <div className="featured-badge">Featured</div>}
                             <div className="project-image">
-                                <img
-                                    src={project.image}
-                                    alt={project.title}
-                                />
-
+                                <img src={project.image} alt={project.title} />
                                 <div className="project-overlay">
                                     <div className="project-links">
-
-                                        {/* Live URL */}
-                                        <a
-                                            href={project.liveUrl}
-                                            target="_blank"
-                                            rel="noopener noreferrer"
-                                            className="project-link"
-                                        >
+                                        <a href={project.liveUrl} target="_blank" rel="noopener noreferrer" className="project-link">
                                             <FiExternalLink size={20} />
                                         </a>
-
-                                        {/* GitHub URL */}
-                                        <a
-                                            href={project.githubUrl}
-                                            target="_blank"
-                                            rel="noopener noreferrer"
-                                            className="project-link"
-                                        >
+                                        <a href={project.githubUrl} target="_blank" rel="noopener noreferrer" className="project-link">
                                             <FiGithub size={20} />
                                         </a>
-
                                     </div>
                                 </div>
                             </div>
-
-                            {/* Project Content */}
                             <div className="project-content">
-
-                                <h3 className="project-title">
-                                    {project.title}
-                                </h3>
-
-                                <p className="project-description">
-                                    {project.description}
-                                </p>
-
+                                <h3 className="project-title">{project.title}</h3>
+                                <p className="project-description">{project.description}</p>
                                 <div className="project-tags">
                                     {project.tags.map((tag) => (
-                                        <span
-                                            key={tag}
-                                            className="project-tag"
-                                        >
-                                            {tag}
-                                        </span>
+                                        <span key={tag} className="project-tag">{tag}</span>
                                     ))}
                                 </div>
-
                             </div>
                         </motion.div>
                     ))}
                 </div>
 
-                {/* CTA Button */}
                 <motion.div
                     className="projects-cta"
                     initial={{ opacity: 0 }}
                     animate={inView ? { opacity: 1 } : {}}
                     transition={{ delay: 0.8 }}
                 >
+
                     <a
                         href="https://github.com/fathimathhafseenaa"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="btn btn-primary btn-lg"
+
+                  
                     >
                         View All Projects
-                    </a>
+                    </a> 
                 </motion.div>
-
             </div>
         </section>
     );
