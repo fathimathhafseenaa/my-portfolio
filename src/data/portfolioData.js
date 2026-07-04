@@ -44,46 +44,64 @@ export const portfolioData = {
 
     // Skills
     skills: {
-        frontend: [
-            { name: "React.js", proficiency: 88, icon: "⚛️" },
-            { name: "JavaScript (ES6+)", proficiency: 90, icon: "🟨" },
-            { name: "HTML5", proficiency: 92, icon: "🌐" },
-            { name: "CSS3", proficiency: 88, icon: "🎨" },
-            { name: "Redux", proficiency: 80, icon: "🔄" },
-            { name: "Next.js", proficiency: 75, icon: "▲" },
-            { name: "Tailwind CSS", proficiency: 85, icon: "💨" },
-            { name: "Material-UI", proficiency: 80, icon: "🎭" },
-        ],
-        backend: [
-            { name: "Node.js", proficiency: 85, icon: "🟢" },
-            { name: "Express.js", proficiency: 85, icon: "🚂" },
-            { name: "Laravel", proficiency: 85, icon: "🔌" },
-            { name: "RESTful APIs", proficiency: 90, icon: "🔌" },
-            { name: "JWT Authentication", proficiency: 85, icon: "📊" },
-            { name: "Socket.io", proficiency: 80, icon: "🔌" },
-        ],
-        database: [
-            { name: "MongoDB", proficiency: 85, icon: "🍃" },
-            { name: "Mongoose", proficiency: 80, icon: "🦡" },
-            { name: "MySQL", proficiency: 80, icon: "🐬" },
-            // { name: "PostgreSQL", proficiency: 70, icon: "🐘" },
-            // { name: "Redis", proficiency: 65, icon: "🔴" },
-        ],
-        devops: [
-            { name: "VPS Deployment", proficiency: 85 },
-            { name: "Apache / cPanel", proficiency: 85 },
-            { name: "Vercel", proficiency: 85 },
-            { name: "Netlify", proficiency: 85 }
 
-        ],
-        other: [
-            { name: "Git", proficiency: 90 },
-            { name: "GitHub", proficiency: 90 },
-            { name: "Postman", proficiency: 85 },
-            { name: "VS Code", proficiency: 90 }
-        ],
-    },
+    frontend: [
+        { name: "React.js", proficiency: 88, icon: "⚛️" },
+        { name: "Angular", proficiency: 82, icon: "🅰️" },
+        { name: "JavaScript (ES6+)", proficiency: 90, icon: "🟨" },
+        { name: "TypeScript", proficiency: 82, icon: "🔷" },
+        { name: "HTML5", proficiency: 92, icon: "🌐" },
+        { name: "CSS3", proficiency: 88, icon: "🎨" },
+        { name: "Bootstrap", proficiency: 90, icon: "🟣" },
+        { name: "Redux", proficiency: 80, icon: "🔄" },
+        { name: "Next.js", proficiency: 75, icon: "▲" },
+        { name: "Tailwind CSS", proficiency: 85, icon: "💨" },
+        { name: "Material-UI", proficiency: 80, icon: "🎭" },
+        { name: "Responsive Web Design", proficiency: 90, icon: "📱" }
+    ],
 
+    backend: [
+        { name: "Node.js", proficiency: 85, icon: "🟢" },
+        { name: "Express.js", proficiency: 85, icon: "🚂" },
+        { name: "Laravel", proficiency: 88, icon: "🔴" },
+        { name: "PHP", proficiency: 85, icon: "🐘" },
+        { name: "RESTful APIs", proficiency: 90, icon: "🔌" },
+        { name: "API Integration", proficiency: 88, icon: "🔗" },
+        { name: "JWT Authentication", proficiency: 85, icon: "🔐" },
+        { name: "MVC Architecture", proficiency: 85, icon: "🏗️" },
+        { name: "OOP", proficiency: 82, icon: "📦" },
+        { name: "SDLC", proficiency: 80, icon: "⚙️" },
+        { name: "RBAC", proficiency: 82, icon: "🛡️" }
+    ],
+
+    database: [
+        { name: "MongoDB", proficiency: 85, icon: "🍃" },
+        { name: "Mongoose", proficiency: 80, icon: "🦡" },
+        { name: "MySQL", proficiency: 88, icon: "🐬" }
+    ],
+
+    cmsAndPlatforms: [
+        { name: "WordPress", proficiency: 85, icon: "📝" },
+        { name: "Elementor", proficiency: 85, icon: "🎨" }
+    ],
+
+    devops: [
+        { name: "VPS Deployment", proficiency: 85, icon: "🚀" },
+        { name: "Apache", proficiency: 80, icon: "🪶" },
+        { name: "cPanel", proficiency: 85, icon: "🧩" },
+        { name: "Vercel", proficiency: 90, icon: "▲" },
+        { name: "Netlify", proficiency: 85, icon: "🌐" }
+    ],
+
+    tools: [
+        { name: "Git", proficiency: 90, icon: "🔧" },
+        { name: "Canva", proficiency: 100, icon: "🎨" },
+        { name: "GitHub", proficiency: 90, icon: "🐙" },
+        { name: "Postman", proficiency: 85, icon: "📮" },
+        { name: "VS Code", proficiency: 92, icon: "💻" },
+        { name: "Version Control", proficiency: 88, icon: "🔄" }
+    ]
+},
     // Projects
     // Projects
     projects: [
@@ -218,6 +236,30 @@ export const portfolioData = {
             role: "Full Stack Developer"
         },
         {
+    id: 2,
+    title: "Conquer Computers",
+    category: "Full-Stack",
+    description: "A modern and responsive computer sales and service website showcasing products, services, and business information with a clean user interface.",
+
+    longDescription:
+        "Developed a responsive business website for Conquer Computers focused on computer sales, accessories, and technical services. Built an interactive and user-friendly frontend with modern UI components, responsive layouts, and optimized performance. Implemented structured navigation, product/service showcases, and mobile-friendly design to enhance user experience across devices. Deployed the application using Vercel for fast and reliable hosting.",
+
+    image: "/projects/conquer.png",
+
+    tags: [
+        "React.js",
+        "JavaScript",
+        "HTML5",
+        "CSS3",
+        "Bootstrap",
+        "Responsive Design",
+        "Vercel"
+    ],
+
+    liveUrl: "https://conquercomputers.vercel.app/",
+    role: "Frontend Developer",
+},
+        {
     id: 11,
     title: "Cloudscape MDTC",
     category: "Full-Stack (Laravel)",
@@ -248,7 +290,28 @@ export const portfolioData = {
 },
 
     ],
+    
+posters: [
+    {
+        id: 1,
+        image: "/projects/poster1.png"
+    },
 
+    {
+        id: 2,
+        image: "/projects/poster2.png"
+    },
+
+    {
+        id: 3,
+        image: "/projects/poster3.png"
+    },
+
+    {
+        id: 4,
+        image: "/projects/poster4.png"
+    }
+],
     // Experience
     experience: [
         {

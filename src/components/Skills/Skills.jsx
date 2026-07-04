@@ -15,8 +15,8 @@ const Skills = () => {
         { id: 'frontend', label: 'Frontend' },
         { id: 'backend', label: 'Backend' },
         { id: 'database', label: 'Database' },
-        { id: 'devops', label: 'deployment' },
-        { id: 'other', label: 'tools' },
+        { id: 'devops', label: 'DevOps' },
+        { id: 'tools', label: 'Tools' },
     ];
 
     return (
