@@ -1,14 +1,15 @@
 import { motion } from 'framer-motion';
 import { TypeAnimation } from 'react-type-animation';
 import { FiGithub, FiLinkedin, FiInstagram, FiMail, FiArrowDown } from 'react-icons/fi';
+import ThreeDCard from '../ThreeDCard/ThreeDCard';
 import './Hero.css';
 
 const Hero = () => {
     const socialLinks = [
-        { icon: <FiGithub size={24} />, url: 'https://github.com/fathimathhafseenaa', label: 'GitHub' },
-        { icon: <FiLinkedin size={24} />, url: 'https://www.linkedin.com/in/fathimath-hafseena/', label: 'LinkedIn' },
-        { icon: <FiInstagram size={24} />, url: 'https://www.instagram.com/hafcy.___?igsh=MTZodWJ0MDV2bTNhMA%3D%3D&utm_source=qr', label: 'Instagram' },
-        { icon: <FiMail size={24} />, url: 'mailto:faathimathhafseena@gmail.com', label: 'Email' },
+        { icon: <FiGithub size={22} />, url: 'https://github.com/fathimathhafseenaa', label: 'GitHub' },
+        { icon: <FiLinkedin size={22} />, url: 'https://www.linkedin.com/in/fathimath-hafseena/', label: 'LinkedIn' },
+        { icon: <FiInstagram size={22} />, url: 'https://www.instagram.com/hafcy.___?igsh=MTZodWJ0MDV2bTNhMA%3D%3D&utm_source=qr', label: 'Instagram' },
+        { icon: <FiMail size={22} />, url: 'mailto:fathimathhafseenaa@gmail.com', label: 'Email' },
     ];
 
     const handleScrollToProjects = () => {
@@ -29,6 +30,26 @@ const Hero = () => {
         document.body.removeChild(link);
     };
 
+    const containerVariants = {
+        hidden: { opacity: 0 },
+        visible: {
+            opacity: 1,
+            transition: {
+                staggerChildren: 0.15,
+                delayChildren: 0.2
+            }
+        }
+    };
+
+    const itemVariants = {
+        hidden: { opacity: 0, y: 30 },
+        visible: {
+            opacity: 1,
+            y: 0,
+            transition: { type: 'spring', stiffness: 100, damping: 15 }
+        }
+    };
+
     return (
         <section id="home" className="hero">
             {/* Animated Background */}
@@ -36,6 +57,7 @@ const Hero = () => {
                 <div className="gradient-orb orb-1"></div>
                 <div className="gradient-orb orb-2"></div>
                 <div className="gradient-orb orb-3"></div>
+                <div className="hero-grid-overlay"></div>
             </div>
 
             <div className="hero-container container">
@@ -43,20 +65,26 @@ const Hero = () => {
                     {/* Text Content */}
                     <motion.div
                         className="hero-text"
-                        initial={{ opacity: 0, y: 50 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.8 }}
+                        variants={containerVariants}
+                        initial="hidden"
+                        animate="visible"
                     >
-                        <motion.p
+                        <motion.span
                             className="hero-greeting"
-                            initial={{ opacity: 0 }}
-                            animate={{ opacity: 1 }}
-                            transition={{ delay: 0.2 }}
+                            variants={itemVariants}
                         >
-                            Hi, I'm Fathimath Hafseena
-                        </motion.p>
+                            <span className="greeting-line"></span>
+                            Hello, I'm
+                        </motion.span>
 
-                        <div className="hero-subtitle">
+                        <motion.h1 
+                            className="hero-name" 
+                            variants={itemVariants}
+                        >
+                            Fathimath <span className="gradient-text-neon glow-text">Hafseena</span>
+                        </motion.h1>
+
+                        <motion.div className="hero-subtitle" variants={itemVariants}>
                             <TypeAnimation
                                 sequence={[
                                     'Full Stack Developer',
@@ -74,58 +102,47 @@ const Hero = () => {
                                 speed={50}
                                 repeat={Infinity}
                             />
-                        </div>
+                        </motion.div>
 
                         <motion.p
                             className="hero-description"
-                            initial={{ opacity: 0 }}
-                            animate={{ opacity: 1 }}
-                            transition={{ delay: 0.6 }}
+                            variants={itemVariants}
                         >
-                         Building scalable, high-performance web applications with clean architecture and secure REST APIs. Passionate about delivering production-ready solutions with optimized performance and seamless user experience.
+                            Building scalable, high-performance web applications with clean architecture and secure REST APIs. Passionate about delivering production-ready solutions with optimized performance and seamless user experience.
                         </motion.p>
 
                         {/* CTA Buttons */}
                         <motion.div
                             className="hero-cta"
-                            initial={{ opacity: 0, y: 20 }}
-                            animate={{ opacity: 1, y: 0 }}
-                            transition={{ delay: 0.8 }}
+                            variants={itemVariants}
                         >
-                            <button className="btn btn-accent btn-lg" onClick={handleScrollToProjects}>
-                                View My Work
+                            <button className="btn btn-accent btn-lg glow-btn" onClick={handleScrollToProjects}>
+                                <span>View My Work</span>
                             </button>
-                            <button className="btn btn-accent btn-lg" onClick={handleScrollToContact}>
-                                Hire Me
+                            <button className="btn btn-secondary-glass btn-lg" onClick={handleScrollToContact}>
+                                <span>Hire Me</span>
                             </button>
-                            <button className="btn btn-accent btn-lg" onClick={handleDownloadResume}>
-                                Download Resume
+                            <button className="btn btn-secondary-glass btn-lg" onClick={handleDownloadResume}>
+                                <span>Download Resume</span>
                             </button>
                         </motion.div>
 
                         {/* Social Links */}
                         <motion.div
                             className="hero-social"
-                            initial={{ opacity: 0 }}
-                            animate={{ opacity: 1 }}
-                            transition={{ delay: 1 }}
+                            variants={itemVariants}
                         >
-                            {socialLinks.map((social, index) => (
-                                <motion.a
+                            {socialLinks.map((social) => (
+                                <a
                                     key={social.label}
                                     href={social.url}
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     className="social-link"
                                     aria-label={social.label}
-                                    whileHover={{ scale: 1.2, rotate: 5 }}
-                                    whileTap={{ scale: 0.9 }}
-                                    initial={{ opacity: 0, y: 20 }}
-                                    animate={{ opacity: 1, y: 0 }}
-                                    transition={{ delay: 1 + index * 0.1 }}
                                 >
                                     {social.icon}
-                                </motion.a>
+                                </a>
                             ))}
                         </motion.div>
                     </motion.div>
@@ -133,31 +150,43 @@ const Hero = () => {
                     {/* Image/Avatar */}
                     <motion.div
                         className="hero-image"
-                        initial={{ opacity: 0, scale: 0.8 }}
+                        initial={{ opacity: 0, scale: 0.85 }}
                         animate={{ opacity: 1, scale: 1 }}
-                        transition={{ duration: 0.8, delay: 0.4 }}
+                        transition={{ duration: 1, type: 'spring', bounce: 0.25, delay: 0.3 }}
                     >
-                        <div className="image-wrapper">
-                            <div className="image-glow"></div>
-                            <img
-                                src="/devlogo.png"
-                                alt="Your Name"
-                                className="hero-avatar"
-                            />
-                            <div className="floating-badge badge-1">
-                                <span>1+</span>
-                                <p>Years Experience</p>
+                        <ThreeDCard className="image-wrapper-3d">
+                            <div className="image-wrapper">
+                                <div className="orbit-ring ring-1"></div>
+                                <div className="orbit-ring ring-2"></div>
+                                <div className="image-glow"></div>
+                                <img
+                                    src="/devlogo.png"
+                                    alt="Fathimath Hafseena"
+                                    className="hero-avatar"
+                                />
+                                <div className="floating-badge badge-1 glass-card">
+                                    <span>1+</span>
+                                    <p>Year Experience</p>
+                                </div>
+                                <div className="floating-badge badge-2 glass-card">
+                                    <span>15+</span>
+                                    <p>Projects Done</p>
+                                </div>
                             </div>
-                            <div className="floating-badge badge-2">
-                                <span>15+</span>
-                                <p>Projects Completed</p>
-                            </div>
-                        </div>
+                        </ThreeDCard>
                     </motion.div>
                 </div>
+            </div>
 
-                {/* Scroll Indicator */}
-                
+            {/* Scroll Indicator */}
+            <div className="scroll-indicator" onClick={handleScrollToProjects}>
+                <p>Scroll Down</p>
+                <motion.div
+                    animate={{ y: [0, 8, 0] }}
+                    transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}
+                >
+                    <FiArrowDown size={18} />
+                </motion.div>
             </div>
         </section>
     );

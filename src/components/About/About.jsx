@@ -2,6 +2,7 @@ import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { FiDownload } from 'react-icons/fi';
 import { portfolioData } from '../../data/portfolioData';
+import ThreeDCard from '../ThreeDCard/ThreeDCard';
 import './About.css';
 
 const About = () => {
@@ -30,7 +31,7 @@ const About = () => {
                     transition={{ duration: 0.6 }}
                 >
                     <p className="section-subtitle">Get To Know More</p>
-                    <h2>About Me</h2>
+                    <h2 className="gradient-text-neon glow-text">About Me</h2>
                 </motion.div>
 
                 <div className="about-content">
@@ -40,13 +41,15 @@ const About = () => {
                         animate={inView ? { opacity: 1, x: 0 } : {}}
                         transition={{ duration: 0.6, delay: 0.2 }}
                     >
-                        <div className="about-image">
-                            <img
-                                src="/aboutme.png"
-                                alt="About Me"
-                            />
-                            <div className="about-image-overlay"></div>
-                        </div>
+                        <ThreeDCard className="about-image-3d">
+                            <div className="about-image">
+                                <img
+                                    src="/aboutme.png"
+                                    alt="About Me"
+                                />
+                                <div className="about-image-overlay"></div>
+                            </div>
+                        </ThreeDCard>
                     </motion.div>
 
                     <motion.div
@@ -55,36 +58,37 @@ const About = () => {
                         animate={inView ? { opacity: 1, x: 0 } : {}}
                         transition={{ duration: 0.6, delay: 0.4 }}
                     >
-                        <p className="about-bio">{portfolioData.about.bio}</p>
+                        <p className="about-bio" dangerouslySetInnerHTML={{ __html: portfolioData.about.bio }}></p>
 
                         <div className="about-highlights">
-                            <h3>Key Highlights</h3>
+                            <h3 className="sub-header">Key Highlights</h3>
                             <ul className="highlights-list">
                                 {portfolioData.about.highlights.map((highlight, index) => (
                                     <motion.li
                                         key={index}
                                         initial={{ opacity: 0, x: 20 }}
                                         animate={inView ? { opacity: 1, x: 0 } : {}}
-                                        transition={{ delay: 0.6 + index * 0.1 }}
+                                        transition={{ delay: 0.5 + index * 0.1 }}
                                     >
                                         <span className="highlight-icon">✓</span>
-                                        {highlight}
+                                        <span className="highlight-text">{highlight}</span>
                                     </motion.li>
                                 ))}
                             </ul>
                         </div>
 
                         <div className="about-fun-facts">
-                            <h3>Fun Facts</h3>
+                            <h3 className="sub-header">Focus & Expertise</h3>
                             <div className="fun-facts-grid">
                                 {portfolioData.about.funFacts.map((fact, index) => (
                                     <motion.div
                                         key={index}
-                                        className="fun-fact-card"
+                                        className="fun-fact-card glass-card"
                                         initial={{ opacity: 0, scale: 0.8 }}
                                         animate={inView ? { opacity: 1, scale: 1 } : {}}
-                                        transition={{ delay: 0.8 + index * 0.1 }}
+                                        transition={{ delay: 0.6 + index * 0.1 }}
                                     >
+                                        <div className="fact-badge-line"></div>
                                         {fact}
                                     </motion.div>
                                 ))}
@@ -92,13 +96,13 @@ const About = () => {
                         </div>
 
                         <motion.button
-                            className="btn btn-primary btn-lg"
+                            className="btn btn-primary btn-lg glow-btn"
                             onClick={handleDownloadResume}
                             initial={{ opacity: 0, y: 20 }}
                             animate={inView ? { opacity: 1, y: 0 } : {}}
-                            transition={{ delay: 1 }}
-                            whileHover={{ scale: 1.05 }}
-                            whileTap={{ scale: 0.95 }}
+                            transition={{ delay: 0.9 }}
+                            whileHover={{ scale: 1.02 }}
+                            whileTap={{ scale: 0.98 }}
                         >
                             <FiDownload />
                             <span>Download Resume</span>

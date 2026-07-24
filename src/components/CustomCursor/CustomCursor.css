@@ -1,0 +1,55 @@
+.custom-cursor-dot {
+  width: 6px;
+  height: 6px;
+  background-color: var(--primary-red);
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: 99999;
+  border-radius: 50%;
+  transition: width 0.2s, height 0.2s, background-color 0.2s;
+  will-change: transform;
+}
+
+.custom-cursor-outline {
+  width: 32px;
+  height: 32px;
+  border: 1px solid var(--primary-red);
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: 99998;
+  border-radius: 50%;
+  transition: width 0.3s, height 0.3s, background-color 0.3s, border-color 0.3s, transform 0.08s ease-out;
+  will-change: transform;
+  box-shadow: 0 0 10px rgba(255, 42, 58, 0.1);
+  background-color: rgba(255, 42, 58, 0.01);
+}
+
+.custom-cursor-dot.hidden,
+.custom-cursor-outline.hidden {
+  opacity: 0;
+}
+
+.custom-cursor-dot.hover {
+  width: 10px;
+  height: 10px;
+  background-color: #ffffff;
+}
+
+.custom-cursor-outline.hover {
+  width: 60px;
+  height: 60px;
+  background-color: rgba(255, 42, 58, 0.15);
+  border-color: rgba(255, 42, 58, 0.5);
+  box-shadow: var(--glass-glow);
+}
+
+@media (max-width: 768px) {
+  .custom-cursor-dot,
+  .custom-cursor-outline {
+    display: none;
+  }
+}

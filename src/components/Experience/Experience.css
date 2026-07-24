@@ -1,18 +1,16 @@
 .experience {
-  background: var(--light-bg-secondary);
-}
-
-body.dark-mode .experience {
-  background: var(--dark-bg-secondary);
+  background: var(--bg-black);
+  position: relative;
 }
 
 .timeline {
   position: relative;
-  max-width: 900px;
+  max-width: 1000px;
   margin: 0 auto;
-  padding: 2rem 0;
+  padding: 3rem 0;
 }
 
+/* Glowing timeline pathway line */
 .timeline::before {
   content: '';
   position: absolute;
@@ -20,146 +18,182 @@ body.dark-mode .experience {
   top: 0;
   bottom: 0;
   width: 2px;
-  background: var(--gradient-primary);
+  background: linear-gradient(to bottom, 
+    transparent 0%, 
+    var(--primary-red) 15%, 
+    var(--primary-red-light) 50%, 
+    var(--primary-red) 85%, 
+    transparent 100%
+  );
   transform: translateX(-50%);
+  box-shadow: 0 0 15px rgba(255, 42, 58, 0.4);
 }
 
 .timeline-item {
   position: relative;
-  margin-bottom: 3rem;
+  margin-bottom: 4rem;
+  display: flex;
+  width: 100%;
 }
 
-.timeline-item::before {
-  content: '';
+.timeline-item.left {
+  justify-content: flex-start;
+}
+
+.timeline-item.right {
+  justify-content: flex-end;
+}
+
+/* Timeline dot indicators */
+.timeline-dot-wrapper {
   position: absolute;
   left: 50%;
-  top: 0;
+  top: 2rem;
+  transform: translateX(-50%);
   width: 20px;
   height: 20px;
+  z-index: 5;
+}
+
+.timeline-dot {
+  width: 16px;
+  height: 16px;
   background: var(--gradient-primary);
+  border: 3px solid var(--bg-black);
   border-radius: 50%;
-  transform: translateX(-50%);
-  box-shadow: 0 0 0 4px var(--light-bg-secondary);
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  z-index: 2;
+  box-shadow: 0 0 10px rgba(255, 42, 58, 0.6);
 }
 
-body.dark-mode .timeline-item::before {
-  box-shadow: 0 0 0 4px var(--dark-bg-secondary);
+.timeline-dot-pulse {
+  width: 20px;
+  height: 20px;
+  background: var(--primary-red);
+  border-radius: 50%;
+  opacity: 0.4;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  animation: pulse-dot 2.5s infinite ease-in-out;
 }
 
+@keyframes pulse-dot {
+  0% { transform: scale(0.9); opacity: 0.6; }
+  50% { transform: scale(1.6); opacity: 0; }
+  100% { transform: scale(0.9); opacity: 0.6; }
+}
+
+/* Timeline card content */
 .timeline-content {
   width: calc(50% - 40px);
-  padding: 2rem;
-  background: var(--light-bg);
+  padding: 2.25rem;
+  background: var(--glass-bg);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--glass-border);
   border-radius: var(--radius-xl);
-  box-shadow: var(--shadow-md);
-  transition: all var(--transition-base);
-}
-
-body.dark-mode .timeline-content {
-  background: var(--dark-bg);
-  border: 1px solid rgba(255, 255, 255, 0.05);
-}
-
-.timeline-item:nth-child(odd) .timeline-content {
-  margin-left: auto;
+  box-shadow: var(--glass-shadow);
+  transition: border-color var(--transition-base), box-shadow var(--transition-base), transform var(--transition-base);
 }
 
 .timeline-content:hover {
   transform: translateY(-5px);
-  box-shadow: var(--shadow-xl);
+  border-color: var(--glass-border-hover);
+  box-shadow: var(--glass-shadow), var(--glass-glow-strong);
+}
+
+.timeline-item.left .timeline-content {
+  margin-right: auto;
+}
+
+.timeline-item.right .timeline-content {
+  margin-left: auto;
 }
 
 .timeline-header {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  margin-bottom: 1rem;
+  margin-bottom: 1.25rem;
 }
 
-.company-logo {
-  width: 60px;
-  height: 60px;
-  border-radius: var(--radius-md);
-  object-fit: cover;
+.position-title {
+  font-family: var(--font-secondary);
+  font-size: 1.45rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 0.35rem;
+  letter-spacing: -0.01em;
 }
 
-.timeline-info h3 {
-  font-size: 1.25rem;
-  margin-bottom: 0.25rem;
-}
-
-.timeline-info h4 {
-  font-size: 1rem;
-  color: var(--primary-blue);
-  margin-bottom: 0.25rem;
-}
-
-body.dark-mode .timeline-info h4 {
-  color: var(--neon-blue);
+.company-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--primary-red-light);
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.02em;
 }
 
 .timeline-duration {
-  font-size: 0.875rem;
-  color: var(--light-text-secondary);
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-tertiary);
   margin: 0;
-}
-
-body.dark-mode .timeline-duration {
-  color: var(--dark-text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
 }
 
 .timeline-description {
-  font-size: 0.95rem;
-  line-height: 1.6;
-  color: var(--light-text-secondary);
-  margin-bottom: 1rem;
-}
-
-body.dark-mode .timeline-description {
-  color: var(--dark-text-secondary);
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: var(--text-secondary);
+  margin-bottom: 1.5rem;
+  font-weight: 300;
 }
 
 .timeline-responsibilities {
   list-style: none;
   padding: 0;
   margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
 }
 
 .timeline-responsibilities li {
-  position: relative;
-  padding-left: 1.5rem;
-  margin-bottom: 0.5rem;
-  font-size: 0.9rem;
-  color: var(--light-text-secondary);
+  display: flex;
+  gap: 0.75rem;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: var(--text-secondary);
+  font-weight: 400;
 }
 
-body.dark-mode .timeline-responsibilities li {
-  color: var(--dark-text-secondary);
-}
-
-.timeline-responsibilities li::before {
-  content: '▹';
-  position: absolute;
-  left: 0;
-  color: var(--primary-blue);
+.bullet-indicator {
+  color: var(--primary-red-light);
   font-weight: 700;
+  flex-shrink: 0;
 }
 
-body.dark-mode .timeline-responsibilities li::before {
-  color: var(--neon-blue);
-}
-
-@media (max-width: 768px) {
+@media (max-width: 850px) {
   .timeline::before {
     left: 30px;
+    transform: none;
   }
 
-  .timeline-item::before {
+  .timeline-dot-wrapper {
     left: 30px;
+    transform: translateX(-50%);
+  }
+
+  .timeline-item {
+    justify-content: flex-start !important;
   }
 
   .timeline-content {
     width: calc(100% - 80px);
     margin-left: 60px !important;
+    margin-right: 0 !important;
   }
 }

@@ -9,6 +9,7 @@ import Footer from './components/Footer/Footer';
 import ScrollToTop from './components/ScrollToTop/ScrollToTop';
 import LoadingScreen from './components/LoadingScreen/LoadingScreen';
 import ScrollProgress from './components/ScrollProgress/ScrollProgress';
+import CustomCursor from './components/CustomCursor/CustomCursor';
 
 // Pages
 import Home from './pages/Home/Home';
@@ -58,6 +59,7 @@ function App() {
   return (
     <Router>
       <div className="App">
+        <CustomCursor />
         <ScrollProgress />
         <Navbar darkMode={darkMode} toggleTheme={toggleTheme} />
         <Routes>
