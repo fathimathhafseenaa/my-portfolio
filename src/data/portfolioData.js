@@ -118,32 +118,32 @@ export const portfolioData = {
             // featured: true,
             role: "Full Stack Developer",
         },
-        {
-            id: 2,
-            title: "SL Logistics",
-            category: "Full-Stack",
-            description: "A responsive logistics company website designed to showcase transportation services, business operations, and customer-focused solutions with a clean and professional UI.",
-            longDescription: "Developed the SL Logistics website using Laravel and PHP for the backend with a responsive frontend built using HTML, CSS, and JavaScript. Created structured service pages highlighting logistics, transportation, and supply chain solutions. Integrated MySQL database for efficient data handling and implemented contact and inquiry features for customer engagement. Focused on clean UI/UX, performance optimization, and deployed the project on a live server for seamless accessibility.",
-            image: "/projects/sl.png",
-            tags: ["Laravel", "PHP", "MySQL", "HTML", "CSS", "JavaScript", "Responsive Design", "Deployment"],
-            liveUrl: "http://sllogistics.co.in/",
-            githubUrl: "",
-            // featured: true,
-            role: "Full Stack Developer"
-        },
-        {
-            id: 3,
-            title: "Granite Udyog",
-            category: "Full-Stack",
-            description: "A responsive business website for Granite Udyog, designed to showcase granite products, manufacturing expertise, and company services with a clean and professional UI.",
-            longDescription: "Developed the Granite Udyog website using Laravel and PHP for the backend and a responsive frontend with HTML, CSS, and JavaScript. Implemented dynamic product showcase pages, structured company information, and optimized UI for industrial branding. Integrated MySQL database for efficient data handling and built user-friendly contact and inquiry features. Ensured clean architecture, performance optimization, and deployed the project on a live server for production use.",
-            image: "/projects/udyog.png",
-            tags: ["Laravel", "PHP", "MySQL", "HTML", "CSS", "JavaScript", "Responsive Design", "Deployment"],
-            liveUrl: "https://graniteudyog.com/",
-            githubUrl: "",
-            // featured: true,
-            role: "Full Stack Developer"
-        },
+        // {
+        //     id: 2,
+        //     title: "SL Logistics",
+        //     category: "Full-Stack",
+        //     description: "A responsive logistics company website designed to showcase transportation services, business operations, and customer-focused solutions with a clean and professional UI.",
+        //     longDescription: "Developed the SL Logistics website using Laravel and PHP for the backend with a responsive frontend built using HTML, CSS, and JavaScript. Created structured service pages highlighting logistics, transportation, and supply chain solutions. Integrated MySQL database for efficient data handling and implemented contact and inquiry features for customer engagement. Focused on clean UI/UX, performance optimization, and deployed the project on a live server for seamless accessibility.",
+        //     image: "/projects/sl.png",
+        //     tags: ["Laravel", "PHP", "MySQL", "HTML", "CSS", "JavaScript", "Responsive Design", "Deployment"],
+        //     liveUrl: "http://sllogistics.co.in/",
+        //     githubUrl: "",
+        //     // featured: true,
+        //     role: "Full Stack Developer"
+        // },
+        // {
+        //     id: 3,
+        //     title: "Granite Udyog",
+        //     category: "Full-Stack",
+        //     description: "A responsive business website for Granite Udyog, designed to showcase granite products, manufacturing expertise, and company services with a clean and professional UI.",
+        //     longDescription: "Developed the Granite Udyog website using Laravel and PHP for the backend and a responsive frontend with HTML, CSS, and JavaScript. Implemented dynamic product showcase pages, structured company information, and optimized UI for industrial branding. Integrated MySQL database for efficient data handling and built user-friendly contact and inquiry features. Ensured clean architecture, performance optimization, and deployed the project on a live server for production use.",
+        //     image: "/projects/udyog.png",
+        //     tags: ["Laravel", "PHP", "MySQL", "HTML", "CSS", "JavaScript", "Responsive Design", "Deployment"],
+        //     liveUrl: "https://graniteudyog.com/",
+        //     githubUrl: "",
+        //     // featured: true,
+        //     role: "Full Stack Developer"
+        // },
         {
             id: 4,
             title: "Perfect Tour Planners",
@@ -157,19 +157,19 @@ export const portfolioData = {
             // featured: true,
             role: "Full Stack Developer",
         },
-        {
-            id: 5,
-            title: "HireHub App Backend",
-            category: "Backend",
-            description: "Backend system developed for the HireHub mobile application, handling user management, job listings, and secure API integrations.",
-            longDescription: "Developed the backend for the HireHub mobile application using Laravel and PHP, focusing on scalable architecture and secure API development. Implemented RESTful APIs for user authentication, job postings, applications, and admin functionalities. Integrated MySQL database for efficient data management and ensured secure data handling and validation. Optimized performance for mobile app interactions and supported seamless communication between frontend and backend services.",
-            image: "/projects/hirehub.png",
-            tags: ["Laravel", "PHP", "MySQL", "REST API", "Authentication", "Backend Development"],
-            liveUrl: "https://play.google.com/store/apps/details?id=com.astra.hirehub",
-            githubUrl: "",
-            // featured: true,
-            role: "Backend Developer"
-        },
+        // {
+        //     id: 5,
+        //     title: "HireHub App Backend",
+        //     category: "Backend",
+        //     description: "Backend system developed for the HireHub mobile application, handling user management, job listings, and secure API integrations.",
+        //     longDescription: "Developed the backend for the HireHub mobile application using Laravel and PHP, focusing on scalable architecture and secure API development. Implemented RESTful APIs for user authentication, job postings, applications, and admin functionalities. Integrated MySQL database for efficient data management and ensured secure data handling and validation. Optimized performance for mobile app interactions and supported seamless communication between frontend and backend services.",
+        //     image: "/projects/hirehub.png",
+        //     tags: ["Laravel", "PHP", "MySQL", "REST API", "Authentication", "Backend Development"],
+        //     liveUrl: "https://play.google.com/store/apps/details?id=com.astra.hirehub",
+        //     githubUrl: "",
+        //     // featured: true,
+        //     role: "Backend Developer"
+        // },
         {
             id: 6,
             title: "Sthapathi",
@@ -259,35 +259,35 @@ export const portfolioData = {
     liveUrl: "https://conquercomputers.vercel.app/",
     role: "Frontend Developer",
 },
-        {
-    id: 11,
-    title: "Cloudscape MDTC",
-    category: "Full-Stack (Laravel)",
-    description: "A professional multidisciplinary therapy centre website designed to showcase therapy services, rehabilitation programs, and patient consultation features with a clean and responsive user interface.",
+//         {
+//     id: 11,
+//     title: "Cloudscape MDTC",
+//     category: "Full-Stack (Laravel)",
+//     description: "A professional multidisciplinary therapy centre website designed to showcase therapy services, rehabilitation programs, and patient consultation features with a clean and responsive user interface.",
 
-    longDescription:
-        "Developed a modern healthcare and therapy centre platform for Cloudscape MDTC using Laravel and MySQL following MVC architecture. The website highlights multidisciplinary therapy services, rehabilitation programs, patient support solutions, and consultation features through a structured and responsive design. Implemented secure inquiry and appointment forms, reusable Blade components, backend content management, and optimized database performance for seamless user experience. Ensured mobile responsiveness, clean UI/UX, and deployed the application on a live VPS production environment.",
+//     longDescription:
+//         "Developed a modern healthcare and therapy centre platform for Cloudscape MDTC using Laravel and MySQL following MVC architecture. The website highlights multidisciplinary therapy services, rehabilitation programs, patient support solutions, and consultation features through a structured and responsive design. Implemented secure inquiry and appointment forms, reusable Blade components, backend content management, and optimized database performance for seamless user experience. Ensured mobile responsiveness, clean UI/UX, and deployed the application on a live VPS production environment.",
 
-    image: "/projects/cloudscape.png",
+//     image: "/projects/cloudscape.png",
 
-    tags: [
-        "Laravel",
-        "PHP",
-        "MySQL",
-        "Blade",
-        "Bootstrap",
-        "MVC",
-        "Responsive Design",
-        "VPS Deployment"
-    ],
+//     tags: [
+//         "Laravel",
+//         "PHP",
+//         "MySQL",
+//         "Blade",
+//         "Bootstrap",
+//         "MVC",
+//         "Responsive Design",
+//         "VPS Deployment"
+//     ],
 
-    liveUrl: "https://cloudscapemdtc.com/",
-    githubUrl: "",
+//     liveUrl: "https://cloudscapemdtc.com/",
+//     githubUrl: "",
 
-    // featured: true,
+//     // featured: true,
 
-    role: "Full Stack Developer",
-},
+//     role: "Full Stack Developer",
+// },
 
     ],
     
