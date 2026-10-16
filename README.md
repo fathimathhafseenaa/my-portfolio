@@ -28,14 +28,13 @@ I enjoy creating responsive, user-friendly web applications and building backend
 
 | Category | Technologies |
 |---|---|
-| Frontend | React.js, Angular, HTML5, CSS3, Bootstrap |
-| Backend | Node.js, Express.js, Laravel, PHP |
-| Programming | JavaScript, TypeScript, Java, Python |
-| Databases | MySQL, MongoDB |
+| Frontend | React.js, CSS3, Bootstrap |
+| Backend | Node.js, Express.js, |
+| Programming | JavaScript, TypeScript |
+| Databases | MongoDB |
 | API & Security | REST APIs, API Integration, JWT Authentication |
-| CMS | WordPress, Elementor |
 | Tools | Git, GitHub, Postman, VS Code |
-| Deployment | Vercel, VPS, Apache, cPanel |
+| Deployment | Vercel |
 
 ## 🌟 Featured Projects
 
