@@ -9,7 +9,7 @@ export const portfolioData = {
         phone: "+91 9746706081 ",
         location: "Dubai, UAE",
         availability: "Available for hire",
-        yearsOfExperience: 1,
+        yearsOfExperience: 1.5,
         projectsCompleted: 15,
         happyClients: 10,
         // coffeeCups: 1000,
@@ -25,9 +25,9 @@ export const portfolioData = {
 
     // About
     about: {
-        bio: "I'm a passionate Full Stack Developer with 1+ year of professional experience building scalable web applications using MERN Stack and Laravel. I specialize in developing RESTful APIs, implementing secure authentication systems, and optimizing backend performance for production-level applications." + "<br>" + "I have hands-on experience in MVC architecture, OOP principles, database optimization, and VPS deployment. I enjoy building clean, maintainable solutions and continuously improving performance and user experience.",
+        bio: "I'm a passionate Full Stack Developer with 1.5 years of professional experience building scalable web applications using MERN Stack and Laravel. I specialize in developing RESTful APIs, implementing secure authentication systems, and optimizing backend performance for production-level applications." + "<br>" + "I have hands-on experience in MVC architecture, OOP principles, database optimization, and VPS deployment. I enjoy building clean, maintainable solutions and continuously improving performance and user experience.",
         highlights: [
-            "1+ year professional experience",
+            "1.5 years professional experience",
             "10+ scalable web applications developed",
             "15+ RESTful APIs implemented",
             "30% performance improvement achieved",
@@ -45,63 +45,66 @@ export const portfolioData = {
     // Skills
     skills: {
 
-    frontend: [
-        { name: "React.js", proficiency: 88, icon: "⚛️" },
-        { name: "Angular", proficiency: 82, icon: "🅰️" },
-        { name: "JavaScript (ES6+)", proficiency: 90, icon: "🟨" },
-        { name: "TypeScript", proficiency: 82, icon: "🔷" },
-        { name: "HTML5", proficiency: 92, icon: "🌐" },
-        { name: "CSS3", proficiency: 88, icon: "🎨" },
-        { name: "Bootstrap", proficiency: 90, icon: "🟣" },
-        { name: "Redux", proficiency: 80, icon: "🔄" },
-        { name: "Next.js", proficiency: 75, icon: "▲" },
-        { name: "Tailwind CSS", proficiency: 85, icon: "💨" },
-        { name: "Material-UI", proficiency: 80, icon: "🎭" },
-        { name: "Responsive Web Design", proficiency: 90, icon: "📱" }
-    ],
+        frontend: [
+            { name: "React.js", proficiency: 88, icon: "⚛️" },
+            { name: "Angular", proficiency: 82, icon: "🅰️" },
+            { name: "JavaScript (ES6+)", proficiency: 90, icon: "🟨" },
+            { name: "TypeScript", proficiency: 82, icon: "🔷" },
+            { name: "HTML5", proficiency: 92, icon: "🌐" },
+            { name: "CSS3", proficiency: 88, icon: "🎨" },
+            { name: "Bootstrap", proficiency: 90, icon: "🟣" },
+            { name: "Redux", proficiency: 80, icon: "🔄" },
+            { name: "Next.js", proficiency: 75, icon: "▲" },
+            { name: "Tailwind CSS", proficiency: 85, icon: "💨" },
+            { name: "Material-UI", proficiency: 80, icon: "🎭" },
+            { name: "Responsive Web Design", proficiency: 90, icon: "📱" }
+        ],
 
-    backend: [
-        { name: "Node.js", proficiency: 85, icon: "🟢" },
-        { name: "Express.js", proficiency: 85, icon: "🚂" },
-        { name: "Laravel", proficiency: 88, icon: "🔴" },
-        { name: "PHP", proficiency: 85, icon: "🐘" },
-        { name: "RESTful APIs", proficiency: 90, icon: "🔌" },
-        { name: "API Integration", proficiency: 88, icon: "🔗" },
-        { name: "JWT Authentication", proficiency: 85, icon: "🔐" },
-        { name: "MVC Architecture", proficiency: 85, icon: "🏗️" },
-        { name: "OOP", proficiency: 82, icon: "📦" },
-        { name: "SDLC", proficiency: 80, icon: "⚙️" },
-        { name: "RBAC", proficiency: 82, icon: "🛡️" }
-    ],
+        backend: [
+            { name: "Node.js", proficiency: 85, icon: "🟢" },
+            { name: "Express.js", proficiency: 85, icon: "🚂" },
+            { name: "Laravel", proficiency: 88, icon: "🔴" },
+            { name: "PHP", proficiency: 85, icon: "🐘" },
+            { name: "Python", proficiency: 70, icon: "🐍" },
+            { name: "Java", proficiency: 70, icon: "☕" },
+             { name: "Spring Boot", proficiency: 70, icon: "🌱" },
+            { name: "RESTful APIs", proficiency: 90, icon: "🔌" },
+            { name: "API Integration", proficiency: 88, icon: "🔗" },
+            { name: "JWT Authentication", proficiency: 85, icon: "🔐" },
+            { name: "MVC Architecture", proficiency: 85, icon: "🏗️" },
+            { name: "OOP", proficiency: 82, icon: "📦" },
+            { name: "SDLC", proficiency: 80, icon: "⚙️" },
+            { name: "RBAC", proficiency: 82, icon: "🛡️" }
+        ],
 
-    database: [
-        { name: "MongoDB", proficiency: 85, icon: "🍃" },
-        { name: "Mongoose", proficiency: 80, icon: "🦡" },
-        { name: "MySQL", proficiency: 88, icon: "🐬" }
-    ],
+        database: [
+            { name: "MongoDB", proficiency: 85, icon: "🍃" },
+            { name: "Mongoose", proficiency: 80, icon: "🦡" },
+            { name: "MySQL", proficiency: 88, icon: "🐬" }
+        ],
 
-    cmsAndPlatforms: [
-        { name: "WordPress", proficiency: 85, icon: "📝" },
-        { name: "Elementor", proficiency: 85, icon: "🎨" }
-    ],
+        cmsAndPlatforms: [
+            { name: "WordPress", proficiency: 85, icon: "📝" },
+            { name: "Elementor", proficiency: 85, icon: "🎨" }
+        ],
 
-    devops: [
-        { name: "VPS Deployment", proficiency: 85, icon: "🚀" },
-        { name: "Apache", proficiency: 80, icon: "🪶" },
-        { name: "cPanel", proficiency: 85, icon: "🧩" },
-        { name: "Vercel", proficiency: 90, icon: "▲" },
-        { name: "Netlify", proficiency: 85, icon: "🌐" }
-    ],
+        devops: [
+            { name: "VPS Deployment", proficiency: 85, icon: "🚀" },
+            { name: "Apache", proficiency: 80, icon: "🪶" },
+            { name: "cPanel", proficiency: 85, icon: "🧩" },
+            { name: "Vercel", proficiency: 90, icon: "▲" },
+            { name: "Netlify", proficiency: 85, icon: "🌐" }
+        ],
 
-    tools: [
-        { name: "Git", proficiency: 90, icon: "🔧" },
-        { name: "Canva", proficiency: 100, icon: "🎨" },
-        { name: "GitHub", proficiency: 90, icon: "🐙" },
-        { name: "Postman", proficiency: 85, icon: "📮" },
-        { name: "VS Code", proficiency: 92, icon: "💻" },
-        { name: "Version Control", proficiency: 88, icon: "🔄" }
-    ]
-},
+        tools: [
+            { name: "Git", proficiency: 90, icon: "🔧" },
+            { name: "Canva", proficiency: 100, icon: "🎨" },
+            { name: "GitHub", proficiency: 90, icon: "🐙" },
+            { name: "Postman", proficiency: 85, icon: "📮" },
+            { name: "VS Code", proficiency: 92, icon: "💻" },
+            { name: "Version Control", proficiency: 88, icon: "🔄" }
+        ]
+    },
     // Projects
     // Projects
     projects: [
@@ -236,82 +239,82 @@ export const portfolioData = {
             role: "Full Stack Developer"
         },
         {
-    id: 2,
-    title: "Conquer Computers",
-    category: "Full-Stack",
-    description: "A modern and responsive computer sales and service website showcasing products, services, and business information with a clean user interface.",
+            id: 2,
+            title: "Conquer Computers",
+            category: "Full-Stack",
+            description: "A modern and responsive computer sales and service website showcasing products, services, and business information with a clean user interface.",
 
-    longDescription:
-        "Developed a responsive business website for Conquer Computers focused on computer sales, accessories, and technical services. Built an interactive and user-friendly frontend with modern UI components, responsive layouts, and optimized performance. Implemented structured navigation, product/service showcases, and mobile-friendly design to enhance user experience across devices. Deployed the application using Vercel for fast and reliable hosting.",
+            longDescription:
+                "Developed a responsive business website for Conquer Computers focused on computer sales, accessories, and technical services. Built an interactive and user-friendly frontend with modern UI components, responsive layouts, and optimized performance. Implemented structured navigation, product/service showcases, and mobile-friendly design to enhance user experience across devices. Deployed the application using Vercel for fast and reliable hosting.",
 
-    image: "/projects/conquer.png",
+            image: "/projects/conquer.png",
 
-    tags: [
-        "React.js",
-        "JavaScript",
-        "HTML5",
-        "CSS3",
-        "Bootstrap",
-        "Responsive Design",
-        "Vercel"
-    ],
+            tags: [
+                "React.js",
+                "JavaScript",
+                "HTML5",
+                "CSS3",
+                "Bootstrap",
+                "Responsive Design",
+                "Vercel"
+            ],
 
     liveUrl: "https://conquercomputers.vercel.app/",
     role: "Frontend Developer",
 },
-//         {
-//     id: 11,
-//     title: "Cloudscape MDTC",
-//     category: "Full-Stack (Laravel)",
-//     description: "A professional multidisciplinary therapy centre website designed to showcase therapy services, rehabilitation programs, and patient consultation features with a clean and responsive user interface.",
+        {
+    id: 11,
+    title: "Cloudscape MDTC",
+    category: "Full-Stack (Laravel)",
+    description: "A professional multidisciplinary therapy centre website designed to showcase therapy services, rehabilitation programs, and patient consultation features with a clean and responsive user interface.",
 
-//     longDescription:
-//         "Developed a modern healthcare and therapy centre platform for Cloudscape MDTC using Laravel and MySQL following MVC architecture. The website highlights multidisciplinary therapy services, rehabilitation programs, patient support solutions, and consultation features through a structured and responsive design. Implemented secure inquiry and appointment forms, reusable Blade components, backend content management, and optimized database performance for seamless user experience. Ensured mobile responsiveness, clean UI/UX, and deployed the application on a live VPS production environment.",
+    longDescription:
+        "Developed a modern healthcare and therapy centre platform for Cloudscape MDTC using Laravel and MySQL following MVC architecture. The website highlights multidisciplinary therapy services, rehabilitation programs, patient support solutions, and consultation features through a structured and responsive design. Implemented secure inquiry and appointment forms, reusable Blade components, backend content management, and optimized database performance for seamless user experience. Ensured mobile responsiveness, clean UI/UX, and deployed the application on a live VPS production environment.",
 
-//     image: "/projects/cloudscape.png",
+    image: "/projects/cloudscape.png",
 
-//     tags: [
-//         "Laravel",
-//         "PHP",
-//         "MySQL",
-//         "Blade",
-//         "Bootstrap",
-//         "MVC",
-//         "Responsive Design",
-//         "VPS Deployment"
-//     ],
+    tags: [
+        "Laravel",
+        "PHP",
+        "MySQL",
+        "Blade",
+        "Bootstrap",
+        "MVC",
+        "Responsive Design",
+        "VPS Deployment"
+    ],
 
-//     liveUrl: "https://cloudscapemdtc.com/",
-//     githubUrl: "",
+    liveUrl: "https://cloudscapemdtc.com/",
+    githubUrl: "",
 
-//     // featured: true,
+    // featured: true,
 
-//     role: "Full Stack Developer",
-// },
+    role: "Full Stack Developer",
+},
 
     ],
-    
-posters: [
-    {
-        id: 1,
-        image: "/projects/poster1.png"
-    },
 
-    {
-        id: 2,
-        image: "/projects/poster2.png"
-    },
+    posters: [
+        {
+            id: 1,
+            image: "/projects/poster1.png"
+        },
 
-    {
-        id: 3,
-        image: "/projects/poster3.png"
-    },
+        {
+            id: 2,
+            image: "/projects/poster2.png"
+        },
 
-    {
-        id: 4,
-        image: "/projects/poster4.png"
-    }
-],
+        {
+            id: 3,
+            image: "/projects/poster3.png"
+        },
+
+        {
+            id: 4,
+            image: "/projects/poster4.png"
+        }
+    ],
     // Experience
     experience: [
         {

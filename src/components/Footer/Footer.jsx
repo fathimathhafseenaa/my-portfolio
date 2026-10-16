@@ -25,7 +25,7 @@ const Footer = () => {
         { icon: <FiGithub size={20} />, url: 'https://github.com/fathimathhafseenaa', label: 'GitHub' },
         { icon: <FiLinkedin size={20} />, url: 'https://www.linkedin.com/in/fathimath-hafseena/', label: 'LinkedIn' },
         { icon: <FiInstagram size={20} />, url: 'https://www.instagram.com/hafcy.___?igsh=MTZodWJ0MDV2bTNhMA%3D%3D&utm_source=qr', label: 'Instagram' },
-        { icon: <FiMail size={20} />, url: 'mailto:faathimathhafseena@gmail.com', label: 'Email' },
+        { icon: <FiMail size={20} />, url: 'mailto:fathimathhafseenaa@gmail.com', label: 'Email' },
     ];
 
     const scrollToTop = () => {
@@ -110,7 +110,7 @@ const Footer = () => {
                         <h4 className="footer-title">Get In Touch</h4>
                         <p className="footer-contact">
                             <strong>Email:</strong><br />
-                            faathimathhafseena@gmail.com
+                            fathimathhafseenaa@gmail.com
                         </p>
                         <p className="footer-contact">
                             <strong>Location:</strong><br />
