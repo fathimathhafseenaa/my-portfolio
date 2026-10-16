@@ -1,136 +1,80 @@
-Portfolio
+# Fathimath Hafseena — Full Stack Developer
 
 > **Building digital experiences that matter.**  
-> A premium, interactive, and responsive portfolio website showcasing my skills, projects, and professional journey as a Full Stack Developer.
+> A modern, responsive portfolio showcasing my technical skills, projects, and professional journey as a Full Stack Developer.
 
-[![Live Demo](https://img.shields.io/badge/demo-online-green.svg?style=for-the-badge&logo=vercel&logoColor=white)](https://your-portfolio-url.com)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue.svg?style=for-the-badge&logo=linkedin)](https://linkedin.com/in/yourprofile)
-
----
-
-## � Table of Contents
-- [�📖 About the Project](#-about-the-project)
-- [✨ Key Features](#-key-features)
-- [🛠️ Tech Stack](#️-tech-stack)
-- [📸 Preview](#-preview)
-- [⚙️ Setup & Installation](#️-setup--installation)
-- [📂 Project Structure](#-project-structure)
-- [📬 Contact](#-contact)
+[![Live Portfolio](https://img.shields.io/badge/Live%20Portfolio-Visit-green?style=for-the-badge&logo=vercel&logoColor=white)](https://fathimath-hafseena-portfolio.vercel.app/)
+[![GitHub](https://img.shields.io/badge/GitHub-Profile-black?style=for-the-badge&logo=github)](https://github.com/fathimathhafseanaa)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=for-the-badge&logo=linkedin)](https://linkedin.com/in/fathimath-hafseena)
 
 ---
 
-## 📖 About the Project
+## 📖 About My Portfolio
 
-This portfolio is designed to be more than just a resume—it's an immersive digital identity. Built with **React 19** and **Framer Motion**, it delivers a fluid, high-performance user experience. 
+Welcome to my personal developer portfolio! This website showcases my skills, projects, technical expertise, and experience in full-stack web development.
 
-It serves as a central hub for potential clients and recruiters to explore my work, technical expertise, and services, demonstrating a commitment to clean code and modern design principles.
+I enjoy creating responsive, user-friendly web applications and building backend solutions using modern technologies. My goal is to deliver practical digital experiences with clean code and intuitive design.
 
----
+## ✨ Features
 
-## ✨ Key Features
+- 🎨 Modern and interactive user interface
+- 📱 Responsive design for desktop, tablet, and mobile
+- 💻 Technical skills showcase
+- 🚀 Featured projects and development experience
+- 📬 Contact information for professional opportunities
+- 🌐 Live deployment using Vercel
 
-*   **🎨 Impactful UI/UX**: Modern design featuring glassmorphism, smooth gradients, and clean typography.
-*   **📱 Fully Responsive**: Optimized for all screens—monitors, laptops, tablets, and mobile phones.
-*   **✨ Advanced Animations**: Smooth scroll reveals and micro-interactions powered by **Framer Motion** and **AOS**.
-*   **🌗 Theming**: Designed with scalable CSS variables for easy dark/light mode switching.
-*   **🚀 High Performance**: Built with **Vite** for instant HMR and optimized production builds.
-*   **📧 Interactive Contact**: Fully functional contact form integrated with **EmailJS**.
-*   **🧭 Client-Side Routing**: Seamless navigation using **React Router v7**.
+## 🛠️ Technologies
 
----
+| Category | Technologies |
+|---|---|
+| Frontend | React.js, Angular, HTML5, CSS3, Bootstrap |
+| Backend | Node.js, Express.js, Laravel, PHP |
+| Programming | JavaScript, TypeScript, Java, Python |
+| Databases | MySQL, MongoDB |
+| API & Security | REST APIs, API Integration, JWT Authentication |
+| CMS | WordPress, Elementor |
+| Tools | Git, GitHub, Postman, VS Code |
+| Deployment | Vercel, VPS, Apache, cPanel |
 
-## 🛠️ Tech Stack
+## 🌟 Featured Projects
 
-I have selected a robust and modern technology stack to ensure scalability and performance.
+### Perfect Tour Planners
+A travel website developed using Laravel, MySQL, Blade, Bootstrap, HTML, CSS, and JavaScript.
 
-| Domain | Technologies |
-| :--- | :--- |
-| **Frontend Framework** | ![React](https://img.shields.io/badge/React-20232A?style=flat&logo=react&logoColor=61DAFB) ![Vite](https://img.shields.io/badge/Vite-646CFF?style=flat&logo=vite&logoColor=white) |
-| **Styling & UI** | ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white) (Modular CSS) |
-| **Animation** | ![Framer Motion](https://img.shields.io/badge/Framer_Motion-0055FF?style=flat&logo=framer&logoColor=white) ![AOS](https://img.shields.io/badge/AOS-Scroll-blue) |
-| **Routing & Utils** | ![React Router](https://img.shields.io/badge/React_Router-CA4245?style=flat&logo=react-router&logoColor=white) ![EmailJS](https://img.shields.io/badge/EmailJS-Connector-orange) |
-| **Deployment** | ![Vercel](https://img.shields.io/badge/Vercel-000000?style=flat&logo=vercel&logoColor=white) (Recommended) |
+### ShopLoc
+An e-commerce web application developed using Laravel and MySQL, with product management and shopping functionality.
 
----
+Explore more projects on my [GitHub profile](https://github.com/fathimathhafseanaa).
 
-## 📸 Preview
+## ⚙️ Run Locally
 
-### 🖥️ Desktop Interface
-> *A clean, spacious layout showcasing projects and skills.*  
-![Desktop Preview](https://via.placeholder.com/800x450?text=Desktop+Screenshot+Coming+Soon)
+### Prerequisites
+- Node.js and npm
+- Git
 
-### 📱 Mobile Experience
-> *Optimized specifically for touch interactions and small screens.*  
-![Mobile Preview](https://via.placeholder.com/375x667?text=Mobile+Screenshot+Coming+Soon)
-
----
-
-## ⚙️ Setup & Installation
-
-Follow these steps to set up the project locally on your machine.
-
-**Prerequisites**: Ensure you have [Node.js](https://nodejs.org/) (v16+) installed.
-
-1.  **Clone the Repository**
-    ```bash
-    git clone https://github.com/shehshaaz/portfolio.git
-    cd portfolio
-    ```
-
-2.  **Install Dependencies**
-    ```bash
-    npm install
-    # or
-    yarn install
-    ```
-
-3.  **Configure Environment** (Optional)
-    Create a `.env` file for your EmailJS keys if needed:
-    ```env
-    VITE_EMAILJS_SERVICE_ID=your_service_id
-    VITE_EMAILJS_TEMPLATE_ID=your_template_id
-    VITE_EMAILJS_PUBLIC_KEY=your_public_key
-    ```
-
-4.  **Run Development Server**
-    ```bash
-    npm run dev
-    ```
-    > The app will run at `http://localhost:5173`
-
----
-
-## 📂 Project Structure
+### Installation
 
 ```bash
-src/
-├── assets/         # static assets (images, icons)
-├── components/     # reusable components (Hero, Navbar, Footer)
-├── pages/          # page-level components (Home, About, Projects)
-├── styles/         # global css and variable definitions
-├── App.jsx         # main app layout and routing
-└── main.jsx        # application entry point
+git clone https://github.com/fathimathhafseanaa/my-portfolio.git
+cd my-portfolio
+npm install
+npm run dev
 ```
 
----
+Open the local URL displayed in your terminal to view the portfolio.
 
 ## 📬 Contact
 
-I am open to freelance projects and full-time opportunities.
+I am open to Full Stack Developer, MERN Stack Developer, React.js Developer, and other web development opportunities.
 
-*   **Email**: [hanvasshehshaaz@gmail.com](mailto:hanvasshehshaaz@gmail.com)
-*   **GitHub**: [github.com/shehshaaz](https://github.com/shehshaaz)
-*   **LinkedIn**: [linkedin.com/in/shehshaaz](https://linkedin.com)
-
----
-
-## 📄 License
-
-This project is open source and available under the [MIT License](LICENSE).
+- **Email:** fathimathhafseenaa@gmail.com
+- **Portfolio:** https://fathimath-hafseena-portfolio.vercel.app/
+- **GitHub:** https://github.com/fathimathhafseanaa
+- **LinkedIn:** https://linkedin.com/in/fathimath-hafseena
 
 ---
 
-<div align="center">
-  <sub>Built with ❤️ by Shehshaaz</sub>
-</div>
+<p align="center">
+  Built with ❤️ by <strong>Fathimath Hafseena</strong>
+</p>
